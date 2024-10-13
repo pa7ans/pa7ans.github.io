@@ -27,7 +27,8 @@ h2 {
 a {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    text-decoration: none; /* Poistaa alaviivat linkeistä */
+    text-decoration: none;
+    /* Poistaa alaviivat linkeistä */
 }
 
 .header {
@@ -66,7 +67,7 @@ a {
 .profile-card {
     text-align: center;
     padding: 20px;
-    background-color: white;
+    background-color: #e7dddd;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     max-width: 350px;
@@ -82,6 +83,7 @@ a {
 .profile-card h2 {
     font-size: 24px;
     margin: 15px 0;
+    text-align: center;
 }
 
 .profile-card p {
@@ -229,7 +231,8 @@ footer {
     a {
         font-family: 'Open Sans', sans-serif;
         font-size: 16px;
-        text-decoration: none; /* Poistaa alaviivat linkeistä */
+        text-decoration: none;
+        /* Poistaa alaviivat linkeistä */
     }
 }
 
@@ -245,7 +248,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: #1f2937;
+    background-color: #e7dddd;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -264,7 +267,7 @@ footer {
 }
 
 .nav-links ul li a {
-    color: white;
+    color: #2b58f9;
     text-decoration: none;
     font-size: 30px;
     letter-spacing: 2px;
@@ -275,16 +278,19 @@ footer {
     top: 20px;
     right: 20px;
     font-size: 50px;
-    color: white;
+    color: #2b58f9;
     cursor: pointer;
 }
 
 /* Yhteydenottolomakkeen perusasettelu */
 form {
     display: flex;
-    flex-direction: column; /* Asettaa kaikki kentät allekkain */
-    max-width: 500px; /* Maksimileveys lomakkeelle */
-    margin: 100px auto; /* Keskittää lomakkeen */
+    flex-direction: column;
+    /* Asettaa kaikki kentät allekkain */
+    max-width: 500px;
+    /* Maksimileveys lomakkeelle */
+    margin: 100px auto;
+    /* Keskittää lomakkeen */
 
 }
 
@@ -293,7 +299,8 @@ label {
     font-weight: bold;
 }
 
-input, textarea {
+input,
+textarea {
     margin-bottom: 15px;
     padding: 10px;
     border: 1px solid #ccc;
@@ -311,6 +318,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    margin-bottom: 30px;
 }
 
 button:hover {
@@ -320,35 +328,125 @@ button:hover {
 .resume-section {
     text-align: center;
     margin: 100px auto;
-    max-width: 400px; /* Rajoitetaan elementin leveys */
-    word-wrap: break-word; /* Teksti katkaistaan, jos se ei mahdu riville */
-    white-space: normal; /* Sallii tekstin rivittymisen normaalisti */
+    max-width: 700px;
+    /* Rajoitetaan elementin leveys */
+    word-wrap: break-word;
+    /* Teksti katkaistaan, jos se ei mahdu riville */
+    white-space: normal;
+    /* Sallii tekstin rivittymisen normaalisti */
     background-color: #e7dddd;
+    padding: 40px;
 }
 
 .portfolio-section {
     text-align: center;
     margin: 100px auto;
-    max-width: 700px; /* Rajoitetaan elementin leveys */
-    word-wrap: break-word; /* Teksti katkaistaan, jos se ei mahdu riville */
-    white-space: normal; /* Sallii tekstin rivittymisen normaalisti */
+    max-width: 700px;
+    /* Rajoitetaan elementin leveys */
+    word-wrap: break-word;
+    /* Teksti katkaistaan, jos se ei mahdu riville */
+    white-space: normal;
+    /* Sallii tekstin rivittymisen normaalisti */
     background-color: #e7dddd;
     padding: 40px;
 }
 
 .project img {
-    width: 100%; /* Kuva täyttää 100 % käytettävissä olevasta tilasta */
-    max-width: 300px; /* Määrittää suurimman leveyden, jota kuva ei ylitä */
-    height: auto; /* Säilyttää kuvasuhteen */
+    width: 100%;
+    /* Kuva täyttää 100 % käytettävissä olevasta tilasta */
+    max-width: 300px;
+    /* Määrittää suurimman leveyden, jota kuva ei ylitä */
+    height: auto;
+    /* Säilyttää kuvasuhteen */
 }
 
 a {
-    text-decoration: none; /* Poistaa alaviivan linkistä */
-    color: inherit; /* Säilyttää vanhemman elementin tekstin värin */
-    font: inherit; /* Säilyttää vanhemman elementin fonttimuotoilut */
+    text-decoration: none;
+    /* Poistaa alaviivan linkistä */
+    color: inherit;
+    /* Säilyttää vanhemman elementin tekstin värin */
+    font: inherit;
+    /* Säilyttää vanhemman elementin fonttimuotoilut */
 }
 
 .contact-section {
-    padding-left: 15px;  /* Lisää tilaa vasemmalle */
-    padding-right: 15px; /* Lisää tilaa oikealle */
+    padding-left: 15px;
+    /* Lisää tilaa vasemmalle */
+    padding-right: 15px;
+    /* Lisää tilaa oikealle */
+}
+
+.resume-section h1,
+h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.work-experience,
+.education-experience {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.job-info,
+.education-info {
+    width: 30%;
+}
+
+.job-description,
+.education-description {
+    width: 65%;
+}
+
+.job-info h4,
+.education-info h4 {
+    color: #2b58f9;
+    /* Voit valita haluamasi värin */
+    font-weight: bold;
+}
+
+.job-info p,
+.education-info p,
+.job-description p,
+.education-description p {
+    margin: 5px 0;
+    color: #333;
+}
+
+.expertise-languages h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.skills-grid,
+.languages-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    /* Lisää väliä sarakkeiden ja rivien väliin */
+    margin-bottom: 40px;
+}
+
+.skill-item,
+.language-item {
+    display: flex;
+    align-items: center;
+}
+
+.skill-icon {
+    width: 10px;
+    height: 10px;
+    background-color: #2b58f9;
+    /* Sininen neliö */
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.contact-section {
+    background-color: #e7dddd;
+    margin-bottom: 0px;
 }
