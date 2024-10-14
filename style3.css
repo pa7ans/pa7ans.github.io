@@ -47,6 +47,7 @@ a {
     font-size: 24px;
     font-family: Georgia, serif;
     font-weight: bold;
+    color: #1F2937;
 }
 
 .hamburger {
@@ -72,6 +73,7 @@ a {
     border-radius: 10px;
     max-width: 350px;
     margin-top: 150px;
+    margin-bottom: 75px;
 }
 
 .profile-card img {
@@ -157,6 +159,7 @@ footer {
     text-align: center;
     padding: 20px;
     font-size: 14px;
+    margin-top: 0px;
 }
 
 .contact-info {
@@ -234,6 +237,26 @@ footer {
         text-decoration: none;
         /* Poistaa alaviivat linkeistä */
     }
+
+    form {
+        max-width: 600px;
+        /* Aseta lomakkeelle maksimileveys suuremmilla näytöillä */
+        margin: 0 auto;
+        /* Keskittää lomakkeen suuremmilla näytöillä */
+    }
+
+    form input,
+    form textarea,
+    form button {
+        font-size: 18px;
+        /* Isompi fonttikoko suuremmilla näytöillä */
+        padding: 15px;
+        /* Lisää täyttöä kenttiin suuremmilla näytöillä */
+    }
+
+    .contact-section {
+        min-height: 900px;
+    }
 }
 
 
@@ -291,7 +314,8 @@ form {
     /* Maksimileveys lomakkeelle */
     margin: 100px auto;
     /* Keskittää lomakkeen */
-
+    padding: 20px;
+    width: 100%
 }
 
 label {
@@ -327,7 +351,7 @@ button:hover {
 
 .resume-section {
     text-align: center;
-    margin: 100px auto;
+    margin: 70px auto;
     max-width: 700px;
     /* Rajoitetaan elementin leveys */
     word-wrap: break-word;
@@ -336,11 +360,13 @@ button:hover {
     /* Sallii tekstin rivittymisen normaalisti */
     background-color: #e7dddd;
     padding: 40px;
+    margin-bottom: 0;
+    padding-top: 100px;
 }
 
 .portfolio-section {
     text-align: center;
-    margin: 100px auto;
+    margin: 70px auto;
     max-width: 700px;
     /* Rajoitetaan elementin leveys */
     word-wrap: break-word;
@@ -349,15 +375,25 @@ button:hover {
     /* Sallii tekstin rivittymisen normaalisti */
     background-color: #e7dddd;
     padding: 40px;
+    margin-bottom: 0;
+    padding-top: 100px;
+}
+
+.portfolio-section h1,
+h2 {
+    text-align: left;
+    margin-bottom: 20px;
 }
 
 .project img {
-    width: 100%;
-    /* Kuva täyttää 100 % käytettävissä olevasta tilasta */
-    max-width: 300px;
-    /* Määrittää suurimman leveyden, jota kuva ei ylitä */
-    height: auto;
-    /* Säilyttää kuvasuhteen */
+    width: 300px;
+    /* Aseta haluamasi leveys */
+    height: 200px;
+    /* Aseta haluamasi korkeus */
+    object-fit: cover;
+    /* Estää kuvan venymisen väärissä mittasuhteissa */
+    margin: 10px;
+    /* Varmistaa tilan kuvien välillä */
 }
 
 a {
@@ -374,6 +410,7 @@ a {
     /* Lisää tilaa vasemmalle */
     padding-right: 15px;
     /* Lisää tilaa oikealle */
+    height: 800px;
 }
 
 .resume-section h1,
@@ -449,4 +486,18 @@ h2 {
 .contact-section {
     background-color: #e7dddd;
     margin-bottom: 0px;
+}
+
+.blue-dot {
+    display: inline-block;
+    width: 12px;
+    /* Aseta täpän leveys */
+    height: 12px;
+    /* Aseta täpän korkeus */
+    background-color: #2b58f9;
+    /* Sininen väri */
+    border-radius: 0;
+    /* Tekee täpästä pyöreän */
+    margin-right: 10px;
+    /* Lisää hieman tilaa täpän ja tekstin väliin */
 }
